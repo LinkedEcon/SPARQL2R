@@ -25,7 +25,7 @@ WHERE {
 ?ups gr:hasCurrencyValue ?amount .
 OPTIONAL {?buyer gr:legalName ?buyerLegalName} .
 OPTIONAL {?seller gr:legalName ?sellerLegalName} .
-** #FILTER (?date > 1420063200) . **
+#FILTER (?date > 1420063200) .
 #FILTER (?date < 1483221600) .
 FILTER NOT EXISTS {?spendingItem elod:hasCorrectedDecision ?correctedDecision} .
 #FILTER (?decisionTypeId = xsd::String(Β.2.2) ) .
